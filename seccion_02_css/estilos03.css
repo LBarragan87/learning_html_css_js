@@ -1,0 +1,12 @@
+h1 {
+  font-size: 100px;
+  color: yellowgreen;
+  height: fit-content;
+  margin: 0;
+}
+p {
+  color: green;
+  border: 1px;
+  border-style: solid;
+  margin: 1;
+}

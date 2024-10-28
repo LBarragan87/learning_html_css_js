@@ -1,0 +1,41 @@
+/* 
+tipos de selectores::
+1.- tipo, clase y id
+  tipo -> aplica a etiquetas, ej. "h1", "h2", "p", etc
+
+  clase -> aplica a todas etiquetas con la clase... ej. class="calculo"... para seleccionar clase, se antepone "." antes de el nombre de la clase
+
+  id -> funcionan igual que las clases, la diferencia esta en que los ids debens er unicos... para selleccionar id, se antepone el signo "#" antes del nombre del id
+
+
+2.- de atributo:
+  se puede colocar a elementos que cumplan aglun atributo
+
+2.- de pseudo-clases y pseudo elementos
+  p:hover{
+*/
+
+.calculo {
+  text-align: center;
+  color: blue;
+  background-color: rgb(255, 253, 240);
+  width: 30%;
+}
+.resultado {
+  color: red;
+}
+.resultado:hover {
+  font-weight: bold;
+  width: 400px;
+  height: 100px;
+}
+.desarrollo {
+  font-style: italic;
+}
+.tema {
+  text-align: center;
+  background-color: aquamarine;
+}
+body {
+  background-color: azure;
+}

@@ -1,0 +1,14 @@
+.normal {
+  color: blue;
+  font-size: large;
+}
+.destacado {
+  color: red;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(141, 159, 175);
+}
+p {
+  text-align: center;
+  width: 25%;
+}
