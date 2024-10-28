@@ -1,0 +1,24 @@
+<!-- 
+ Basandote en el código HTML proporcionado, redactar una función (mostEste es un mensajerarTexto()) que muestre el contenido del input (inputTexto) en el encabezado h1 (titulo).
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresos de usuario 1</title>
+  </head>
+  <body>
+    <input type="text" id="inputTexto" value="Este es un mensaje" />
+    <button onclick="mostrarTexto()">Click aqui</button>
+    <h1 id="titulo"></h1>
+    <script>
+      function mostrarTexto() {
+        let val_input = document.getElementById("inputTexto").value;
+        let this_title = document.getElementById("titulo");
+        mensaje = val_input;
+        this_title.textContent = mensaje;
+      }
+    </script>
+  </body>
+</html>

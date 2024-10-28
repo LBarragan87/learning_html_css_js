@@ -1,0 +1,21 @@
+<!-- 
+ A partir del código HTML desarrollado en el ejercicio anterior, ahora debe crear la función mostrarTexto() que obtendra el contenido de la etiqueta input y mostrará dicho contenido en un alert.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresos de usuario 2</title>
+  </head>
+  <body>
+    <input type="text" id="inputTexto" />
+    <button onclick="mostrarTexto()">Boton</button>
+    <script>
+      function mostrarTexto() {
+        valor = document.getElementById("inputTexto").value;
+        alert(valor);
+      }
+    </script>
+  </body>
+</html>
