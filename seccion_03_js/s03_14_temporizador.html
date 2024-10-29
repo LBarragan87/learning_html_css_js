@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="tiempo" />
+    <button onclick="comenzarTiempo()">activar</button>
+    <button onclick="resetReloj()">resetear</button>
+    <h1 style="color: blue" id="alerta">apagado</h1>
+
+    <script>
+      function comenzarTiempo() {
+        let tiempo = document.getElementById("tiempo").value;
+        setTimeout(tiempoCumplido, 1000 * tiempo);
+      }
+      function tiempoCumplido() {
+        let mensaje = "se acabo el tiempo";
+        let texto = document.getElementById("alerta");
+        texto.style.color = "red";
+        texto.textContent = mensaje;
+      }
+      function resetReloj() {
+        let mensaje = "apagado";
+        let texto = document.getElementById("alerta");
+        texto.textContent = mensaje;
+        texto.style.color = "green";
+      }
+    </script>
+  </body>
+</html>

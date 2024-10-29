@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="./styles/encuesta.css" />
+  </head>
+  <body onload="temporizador_apagado()">
+    <h1>Encuesta de datos personales</h1>
+    <h2>Ingresar datos Personales</h2>
+    <h3 id="timmer"></h3>
+    <hr />
+    <div class="encuesta">
+      <button onclick="iniciar_temporizador()">Iniciar Encuesta</button>
+      <br />
+      <b class="preguntas">Nombre Completo: </b><br /><input
+        class="respuestas"
+        type="text"
+        disabled
+      /><br />
+      <b class="preguntas">Edad: </b><br /><input
+        class="respuestas"
+        type="text"
+        disabled
+      /><br />
+      <b class="preguntas">Fecha de nacimiento: </b><br /><input
+        class="respuestas"
+        type="text"
+        disabled
+      /><br />
+      <b class="preguntas">Lugar de Nacimiento: </b><br /><input
+        class="respuestas"
+        type="text"
+        disabled
+      /><br />
+      <b class="preguntas">Lenguaje Favorito: </b><br /><input
+        class="respuestas"
+        type="text"
+        disabled
+      />
+      <br />
+      <button
+        onclick="terminar_encuesta()"
+        disabled
+        id="boton_termino_encuesta"
+      >
+        Terminar Encuesta
+      </button>
+    </div>
+
+    <script>
+      // parametros para modificaciones //
+      let iniciado = false;
+      let duracion = 30;
+      let duracion_milliseconds = duracion * 1000;
+      let millisecond_interval = 1000;
+
+      let initial_time = new Date(0);
+      initial_time.setMilliseconds(duracion_milliseconds);
+      let actual_date = initial_time;
+
+      let lista_respuestas = document.getElementsByClassName("respuestas");
+
+      // no mover de aqui en adelante //
+      function iniciar_temporizador() {
+        iniciado = true;
+        let finish_button = document.getElementById("terminar_encuesta");
+        Array.prototype.forEach.call(lista_respuestas, function (item) {
+          item.disabled = false;
+        });
+        document.getElementById("boton_termino_encuesta").disabled = false;
+
+        this_interval = setInterval(temporizador, millisecond_interval);
+      }
+      function temporizador() {
+        if (duracion_milliseconds == 0) {
+          clearInterval(this_interval);
+          alert("GAME OVER!, AGOTASTE TU TIEMPO");
+        } else {
+          duracion_milliseconds =
+            duracion_milliseconds - 1 * millisecond_interval;
+
+          initial_time.setTime(duracion_milliseconds);
+          actual_date = actual_date;
+
+          let this_minutes = String(initial_time.getMinutes()).padStart(2, 0);
+          let this_seconds = String(initial_time.getSeconds()).padStart(2, 0);
+          let this_milliseconds = String(
+            initial_time.getMilliseconds()
+          ).padStart(3, 0);
+
+          this_timmer = document.getElementById("timmer");
+          this_timmer.textContent = `${this_minutes}:${this_seconds}`;
+        }
+      }
+      function temporizador_apagado() {
+        let this_minutes = String(initial_time.getMinutes()).padStart(2, 0);
+        let this_seconds = String(initial_time.getSeconds()).padStart(2, 0);
+        let this_milliseconds = String(initial_time.getMilliseconds()).padStart(
+          3,
+          0
+        );
+        this_timmer = document.getElementById("timmer");
+        this_timmer.textContent = `${this_minutes}:${this_seconds}`;
+      }
+      function terminar_encuesta() {
+        clearInterval(this_interval);
+        alert(
+          `felicidades!, terminaste con ${
+            duracion_milliseconds / 1000
+          } segundos de sobra`
+        );
+      }
+    </script>
+  </body>
+</html>

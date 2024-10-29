@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="local_time"></h1>
+    <button onclick="mostrarFecha()">get local date</button>
+    <script>
+      let this_date = new Date();
+      this_local_date = this_date.toLocaleDateString("es-ES");
+      local_time_element = document.getElementById("local_time");
+      function mostrarFecha() {
+        local_time_element.textContent = this_local_date;
+        alert(this_local_date);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temporizador</title>
+  </head>
+  <body onload="comenzarReloj()">
+    <h1 id="horaActual"></h1>
+    <h1>hola mundo</h1>
+    <script>
+      function comenzarReloj() {
+        setInterval(ticTac, 1);
+      }
+      function ticTac() {
+        let tiempoActual = new Date();
+        let hora = String(tiempoActual.getHours()).padStart(2, 0);
+        let minutos = String(tiempoActual.getMinutes()).padStart(2, 0);
+        let segundos = String(tiempoActual.getSeconds()).padStart(2, 0);
+        let milisegundos = String(tiempoActual.getMilliseconds()).padStart(
+          3,
+          0
+        );
+        thisHour = `${hora}:${minutos}:${segundos}:${milisegundos}`;
+        document.getElementById("horaActual").textContent = thisHour;
+      }
+    </script>
+  </body>
+</html>

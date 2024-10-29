@@ -1,0 +1,29 @@
+.preguntas {
+  font-size: 15px;
+  color: blue;
+}
+body {
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+  color: blueviolet;
+  text-decoration: underline;
+}
+.encuesta {
+  text-align: center;
+}
+button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 1;
+}
+#timmer {
+  text-align: right;
+  margin-right: 20px;
+  color: red;
+}

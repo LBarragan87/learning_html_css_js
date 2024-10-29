@@ -6,7 +6,7 @@ Dentro de la funcion test() se debe mostrar en un alert el siguiente mensaje uti
 let pelicula = "Pulp Fiction";
 let hora = "21:00";
 
-function test(pelicula, hora) {
+function test() {
   let mensaje = `La funcion de ${pelicula} es a las ${hora}`;
   //console.log(mensaje);
   alert(mensaje);
