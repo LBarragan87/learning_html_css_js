@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Combustible</title>
+    <link rel="stylesheet" href="./mi_estilo.css">
+    <script src="./calculos.js"></script>
+  </head>
+  <body>
+    
+    <h1 class="principal">Calcular Combustible</h1>
+    <h2>Calcula cuantos litros vas a necesitar</h2>
+    <div class="contenido_datos">
+      <b class="datos">kilometros: </b>
+      <input id="kilometros" placeholder="Ingrese kilometros recorrido"></input><br>
+    </div>
+    <div class="contenido_datos">
+      <b class="datos">rendimiento: </b>
+      <input id="rendimiento" placeholder="Ingrese rendimiento"></input><br>
+    </div>
+    <div class="ubicacion_boton">
+      <button onclick="CalcularCombustible()">Calcular Combustible</button>
+      <h1 id = "resultado" class="resultado"></h1>
+    </div>
+  </body>
+</html>

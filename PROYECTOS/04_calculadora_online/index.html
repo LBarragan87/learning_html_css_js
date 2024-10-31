@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" href="./estilos.css" />
+    <script src="./funciones.js"></script>
+  </head>
+  <body>
+    <h1>Mi Calculadora</h1>
+    <hr />
+    <div>
+      <b>Ingresar Primer Valor</b><br /><input
+        type="number"
+        class="inputs"
+        id="valor1"
+        placeholder="ingrese un numero"
+      />
+    </div>
+    <div>
+      <b>Ingresar Segundo Valor</b><br />
+      <input
+        type="number"
+        class="inputs"
+        id="valor2"
+        placeholder="ingrese un numero"
+      />
+    </div>
+    <hr />
+    <div class="area_operaciones">
+      <div class="sub_area_operaciones">
+        <button onclick="suma()" class="operaciones_signo">+</button
+        ><button onclick="resta()" class="operaciones_signo">-</button
+        ><button onclick="potencia()" class="operaciones_palabra">
+          potencia</button
+        ><button onclick="absoluto()" class="operaciones_palabra">
+          absoluto
+        </button>
+      </div>
+      <div class="sub_area_operaciones">
+        <button onclick="multiplicacion()" class="operaciones_signo">x</button>
+        <button onclick="division()" class="operaciones_signo">/</button>
+        <button onclick="raiz()" class="operaciones_palabra">raiz</button>
+        <button onclick="random()" class="operaciones_palabra">random</button>
+      </div>
+    </div>
+    <h1 id="resultado"></h1>
+  </body>
+</html>

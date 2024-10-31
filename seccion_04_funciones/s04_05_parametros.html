@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>primer numero</p>
+    <input
+      onchange="calcular()"
+      id="input1"
+      type="number"
+      placeholder="ingrese un numero"
+    /><br />
+    <p>segundo numero</p>
+    <input
+      onchange="calcular()"
+      id="input2"
+      type="number"
+      placeholder="ingrese
+    un numero"
+    /><br />
+    <br />
+
+    <p id="resultado">resultado =</p>
+    <script>
+      let resultado = document.getElementById("resultado");
+
+      function sumar(numero1, numero2) {
+        return numero1 + numero2;
+      }
+
+      function calcular() {
+        let valor1 = +document.getElementById("input1").value;
+        let valor2 = +document.getElementById("input2").value;
+        console.log(valor1);
+        console.log(valor2);
+
+        let suma = sumar(valor1, valor2);
+
+        resultado.textContent = `resultado = ${suma}`;
+      }
+    </script>
+  </body>
+</html>

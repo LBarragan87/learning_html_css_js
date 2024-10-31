@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ciNeflix</title>
+    <link rel="stylesheet" href="./my_style.css" />
+    <script src="./funciones.js"></script>
+  </head>
+  <body>
+    <h1 class="titulos">ciNeflix</h1>
+    <hr />
+    <div class="formulario">
+      <p class="textos">Indicanos tu edad:</p>
+      <input
+        type="number"
+        class="inputs"
+        id="edad"
+        placeholder="Indica tu edad"
+      />
+      <br />
+      <button class="botones" onclick="peliculas_comedia()">comedia</button
+      ><button class="botones" onclick="peliculas_drama()">drama</button
+      ><button class="botones" onclick="peliculas_musical()">musical</button
+      ><button class="botones" onclick="peliculas_crimen()">crimen</button>
+    </div>
+    <div>
+      <h3 id="pelicula_opcion_1"></h3>
+      <h3 id="pelicula_opcion_2"></h3>
+      <h3 id="pelicula_opcion_3"></h3>
+      <h3 id="pelicula_opcion_4"></h3>
+    </div>
+    <hr />
+
+    <div class="salida_recomendaciones">
+      <h2 class="textos" id="recomendacines"></h2>
+    </div>
+  </body>
+</html>

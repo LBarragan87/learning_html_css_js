@@ -1,0 +1,30 @@
+.principal {
+  color: blue;
+}
+.datos {
+  font-style: italic;
+}
+button {
+  width: 100px;
+  text-align: center;
+  background-color: rgb(228, 186, 131);
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+body {
+  background-color: rgb(248, 242, 235);
+}
+.contenido_datos {
+  width: 60%;
+  padding: 10px;
+  text-align: right;
+}
+.ubicacion_boton {
+  text-align: center;
+}
+input {
+  text-align: center;
+  color: rebeccapurple;
+}

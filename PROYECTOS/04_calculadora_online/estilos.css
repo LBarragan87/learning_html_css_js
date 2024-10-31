@@ -1,0 +1,15 @@
+.operaciones_palabra {
+  width: 100px;
+}
+.operaciones_signo {
+  width: 50px;
+}
+.sub_area_operaciones {
+  width: 25%;
+}
+.area_operaciones {
+  width: 70%;
+}
+body {
+  background-color: rgb(216, 221, 221);
+}

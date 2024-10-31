@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores Logicos</title>
+    <link rel="stylesheet" href="./miEstilo.css" />
+    <script src="./operaciones.js"></script>
+  </head>
+  <body>
+    <p class="texto_normal">ingrese su edad:</p>
+    <input
+      onchange="evaluar_edad()"
+      id="edad"
+      type="number"
+      placeholder="ingrese una edad valida"
+    />
+    <button onclick="evaluar_edad()">enviar</button>
+    <h3 class="validaciones">Puede beber Alcohol?</h3>
+    <h3 id="beber_alcohol">---</h3>
+    <h3 class="validaciones">Puede ingresar a la fiesta?</h3>
+    <h3 id="ingresar_fiesta">---</h3>
+    <h3 class="validaciones">tiene entrada Gratis?</h3>
+    <h3 id="entrada_gratis">---</h3>
+  </body>
+</html>

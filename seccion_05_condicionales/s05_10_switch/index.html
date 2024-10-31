@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./functions.js"></script>
+  </head>
+  <body>
+    <p>elija una de las opciones</p>
+    <ol>
+      <li>manzana</li>
+      <li>naranja</li>
+      <li>banana</li>
+      <li>pera</li>
+      <li>sandia</li>
+    </ol>
+    <input
+      type="number"
+      id="numero_fruta"
+      min="1"
+      max="5"
+      onchange="valor_numero_fruta()"
+    />
+    <br />
+    <button onclick="valor_numero_fruta()">consultar precio</button>
+    <h1 id="precio"></h1>
+  </body>
+</html>

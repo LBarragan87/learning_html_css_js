@@ -1,0 +1,5 @@
+crear calculadora que contenga 2 inputs, correspondientes a los valores de entrada
+colocar botones de suma, resta, multiplicacion y division
+adicional, potencia, raiz, absoluto
+que haran operaciones con el primer y segundo valor
+adicional se agregara boton random que genere valo aleatorio entre el primer y segundo numero
