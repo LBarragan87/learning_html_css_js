@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte Escolar</title>
+    <link rel="stylesheet" href="./src/estilos.css" />
+    <script src="./src/functions.js"></script>
+  </head>
+  <body onload="fecha(), lista_alumnos()">
+    <div>
+      <img src="./img/utel_logo.png" alt="logo_utel" width="20%" />
+      <h1 id="fecha"></h1>
+      <h1 class="titulo">Reporte Escolar</h1>
+    </div>
+    <select
+      class="alumnos"
+      id="alumnos"
+      onchange="ver_calificaciones()"
+    ></select>
+    <h2 class="calificaciones">Calificaciones:</h2>
+    <ul id="calificaciones"></ul>
+    <h3 class="calculables">Promedio:</h3>
+    <button onclick="calcularPromedio()" class="botones">
+      Calcular Promedio
+    </button>
+    <h2 id="promedio"></h2>
+    <h3 class="calculables">Calificacion mas Alta:</h3>
+    <button onclick="calcularMejorCalificacion()" class="botones">
+      Calificacion mas Alta
+    </button>
+    <h2 id="mejor_nota"></h2>
+    <h3 class="calculables">Se Realizaron Aplazos?:</h3>
+    <button onclick="verificar_aplazos()" class="botones">
+      Verificar Aplazos
+    </button>
+    <h2 id="aplazos"></h2>
+  </body>
+</html>

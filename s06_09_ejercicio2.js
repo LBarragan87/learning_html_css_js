@@ -10,9 +10,9 @@ Implemente en la función testLoop, un Loop For que imprima en la consola la tab
 ...
 */
 function testLoop(numero) {
-  for (let x = 1; x <= 10; x++) {
+  for (let x = 1; x <= 1000000; x++) {
     console.log(numero * x);
   }
 }
 
-testLoop(5);
+testLoop(1);

@@ -1,0 +1,6 @@
+crear array con 5 calificaciones
+mostrar 4 botones
+    * mostrar lista con notas
+    * calcular promedio
+    * obtener nota mas alta
+    * establecer si hubo aplazos (cuando se reprueba algun periodo)
