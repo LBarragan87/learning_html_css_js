@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Perro(raza, edad) {
+        this.patas = 4;
+        this.raza = raza;
+        this.edad = edad;
+        this.ladrar = function () {
+          console.log("guau");
+        };
+      }
+
+      let simba = new Perro("shi tzu", 5);
+      let reina = new Perro("solobino", 3);
+      let batu = new Perro("cocker", 1);
+
+      console.log(simba.raza);
+      console.log(simba.edad);
+
+      function Empleado(nombre, apellido, edad, cargo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.cargo = cargo;
+        this.presentarse = function () {
+          console.log(
+            `Mi nombre es ${this.nombre} ${this.apellido}, soy ${this.cargo}y tengo ${this.edad} años`
+          );
+        };
+      }
+
+      let luis = new Empleado("Luis", "Barragan", 37, "aprendiz");
+      luis.presentarse();
+    </script>
+  </body>
+</html>

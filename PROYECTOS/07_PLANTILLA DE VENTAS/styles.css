@@ -1,0 +1,16 @@
+.labels {
+  color: red;
+}
+.inputs_ventas {
+  text-align: center;
+}
+.menor_venta {
+  background-color: rgb(218, 117, 117);
+  text-align: center;
+  color: aliceblue;
+}
+.mayor_venta {
+  background-color: rgb(103, 209, 103);
+  text-align: center;
+  color: aliceblue;
+}

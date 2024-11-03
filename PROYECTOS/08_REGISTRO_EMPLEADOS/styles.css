@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(195, 243, 227);
+}
+.encabezado {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(235, 243, 240);
+  background-color: rgb(13, 109, 77);
+}
+.botones {
+  background-color: rgb(34, 54, 54);
+  color: rgb(191, 219, 219);
+  font-weight: bold;
+}
+.titulo_input {
+  padding: 0px;
+  margin: 0px;
+}
+.parametros_registro {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.inputs_registro {
+  margin-bottom: 10px;
+  width: 300px;
+}
+.empleado {
+  color: rgb(6, 92, 92);
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+.nombre_empleado {
+  background-color: rgb(39, 90, 90);
+  color: aliceblue;
+  text-align: center;
+  text-transform: capitalize;
+}
+#area_botones {
+  margin: 20px;
+  text-align: center;
+}
