@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="nombre"></div>
+        <script>
+            let mi_persona = {
+                nombre: "luis",
+                edad: 35,
+                esEstudiante: false,
+                direccion: {
+                    calle: "av. siempreviva 742",
+                    ciudad: "springfield",
+                },
+                telefonos: ["555-555-5555", "555-555-5556"],
+            };
+
+            let obj_nombre = document.getElementById("nombre");
+            obj_nombre.textContent = mi_persona.nombre;
+        </script>
+    </body>
+</html>

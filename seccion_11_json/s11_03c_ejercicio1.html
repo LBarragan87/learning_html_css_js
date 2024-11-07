@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let datosJson;
+
+            let titulo;
+            let director;
+            let lanzamiento;
+            let duracion;
+            let actores;
+            let premioOscar;
+
+            fetch("ej3c_datos.json")
+                .then((res) => res.json())
+                .then((salida) => {
+                    datosJson = salida;
+
+                    titulo = datosJson.titulo;
+                    director = datosJson.director;
+                    lanzamiento = datosJson.lanzamiento;
+                    duracion = datosJson.duracion;
+                    actores = datosJson.actores;
+                    premioOscar = datosJson.premioOscar;
+
+                    console.log(datosJson.titulo);
+                    console.log(datosJson.director);
+                    console.log(datosJson.lanzamiento);
+                    console.log(datosJson.duracion);
+                    console.log(datosJson.actores);
+                    console.log(datosJson.premioOscar);
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let datosJson;
+            let z;
+            let nombre;
+            let calle;
+            let ciudad;
+            let cantEstudiantes;
+            let estudiantes;
+
+            fetch("ej3d_datos.json")
+                .then((res) => res.json())
+                .then((salida) => {
+                    datosJson = salida;
+
+                    nombre = datosJson.nombre;
+                    calle = datosJson.direccion.calle;
+                    ciudad = datosJson.direccion.ciudad;
+                    cantEstudiantes = datosJson.cantEstudiantes;
+                    estudiantes = datosJson.estudiantes;
+
+                    console.log(datosJson.nombre);
+                    console.log(datosJson.direccion.calle);
+                    console.log(datosJson.direccion.ciudad);
+                    console.log(datosJson.cantEstudiantes);
+                    console.log(datosJson.estudiantes);
+                });
+        </script>
+    </body>
+</html>

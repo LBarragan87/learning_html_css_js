@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let x;
+            let datosJson;
+            fetch("s11_01_json.json")
+                .then((res) => res.json())
+                .then((salida) => {
+                    datosJson = salida;
+                    //console.log(datosJson.nombre);
+                    x = datosJson;
+                    console.log(x.nombre);
+                    console.log(x.edad);
+                    console.log(x.esEstudiante);
+                    console.log(x.direccion);
+                    console.log(x.telefonos);
+                });
+        </script>
+    </body>
+</html>

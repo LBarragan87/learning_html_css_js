@@ -1,0 +1,22 @@
+.botones {
+    background-color: rgb(64, 10, 116);
+    color: aliceblue;
+    text-transform: uppercase;
+    height: 50px;
+    width: 250px;
+}
+#titulo {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+body {
+    background-color: rgb(225, 192, 255);
+}
+.elemento_vehiculo {
+    background-color: rgb(181, 126, 233);
+    font-weight: bold;
+    text-transform: uppercase;
+}

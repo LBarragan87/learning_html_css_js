@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo {
+    background: blue;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#vehiculos {
+    background: red;
+    width: 80%;
+    min-height: 500px;
+    direction: right;
+    float: left;
+}
+
+#area_botones {
+    background: green;
+    width: 20%;
+    min-height: 500px;
+    direction: right;
+    float: left;
+}
+
+#registrar_nuevo {
+    background: rgb(255, 0, 149);
+    width: 100%;
+    min-height: 300px;
+    direction: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.Label_parametro_vehiculo {
+    color: blanchedalmond;
+}
+
+.input_parametro_vehiculo {
+    color: blue;
+    width: 80%;
+}

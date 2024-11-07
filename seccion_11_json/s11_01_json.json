@@ -1,0 +1,10 @@
+{
+    "nombre": "luis",
+    "edad": 35,
+    "esEstudiante": false,
+    "direccion": {
+        "calle": "av. siempreviva 742",
+        "ciudad": "springfield"
+    },
+    "telefonos": ["555-555-5555", "555-555-5556"]
+}

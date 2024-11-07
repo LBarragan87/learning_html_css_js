@@ -1,0 +1,22 @@
+button {
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(34, 34, 59);
+    font-weight: bold;
+    text-decoration: und;
+}
+body {
+    background: rgb(231, 231, 241);
+}
+.nombre_pagina {
+    text-transform: uppercase;
+    color: rgb(53, 53, 121);
+    text-align: center;
+}
+.Mascotas {
+    border-top: 1px solid rgb(34, 34, 59);
+    border-bottom: 1px solid rgb(34, 34, 59);
+    background-color: rgb(92, 92, 150);
+    color: aliceblue;
+    text-transform: uppercase;
+}

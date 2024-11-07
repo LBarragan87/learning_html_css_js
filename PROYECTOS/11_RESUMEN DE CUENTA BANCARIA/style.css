@@ -1,0 +1,16 @@
+.datos {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.saldo {
+    color: red;
+}
+.valores {
+    color: red;
+    text-decoration: underline;
+}
+body {
+    background-color: rgb(255, 213, 248);
+}
